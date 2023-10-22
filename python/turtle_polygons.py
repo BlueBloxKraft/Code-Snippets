@@ -6,7 +6,7 @@ def drawRegPolygon(noOfSides, sideLength):
             forward(sideLength)
             left(360/noOfSides)
     else:
-        print("The number of sides can't be less than")
+        print("The number of sides can't be less than 3")
 
 # Test
 drawRegPolygon(5, 40)
