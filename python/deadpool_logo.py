@@ -43,14 +43,9 @@ def func_a():
     t.color("red")
     t.fillcolor("red")
     t.begin_fill()
-    t.fd(40)
-    t.lt(90)
-    t.fd(360)
-    t.lt(90)
-    t.fd(40)
-    t.lt(90)
-    t.fd(360)
-    t.lt(90)
+    for i in range(4):
+        t.fd(40*abs(1-10*(i%2)))
+        t.lt(90)
     t.end_fill()
 
 moveOnY(-150)
